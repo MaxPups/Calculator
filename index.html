@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calc</title>
+</head>
+
+<body>
+    <label>Выберете валюту</label>
+    <select id="choise">
+        <option>dollar</option>
+        <option>euro</option>
+    </select>
+    <br>
+    <label>Введите число</label>
+    <input type="text" id="result">
+    <button>tap</button>
+    <br>
+    <div id="dollar"></div>
+    <div id="euro"></div>
+    <hr>
+    Записаться на обмен валюты
+    <form action="send.php" method="post">
+        </form>
+
+        <?php
+        //проверяем, существуют ли переменные в массиве POST
+        if(!isset($_POST['fio']) and !isset($_POST['email'])){
+         ?> <form action="send.php" method="post">
+        <input type="text" name="fio" placeholder="Укажите ФИО" required>
+        <input type="text" name="email" placeholder="Укажите e-mail" required>
+        <input type="submit" value="Отправить">
+        </form> 
+        
+   
+    <script src="script.js"></script>
+   
+</body>
+
+</html>
